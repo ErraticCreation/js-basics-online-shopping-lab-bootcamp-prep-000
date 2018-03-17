@@ -47,7 +47,7 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     if(item === cart[i].itemName) {
       inCart = true;
-      delete cart[i].itemName;
+      cart.
     } 
     if (!inCart) {
       return "That item is not in your cart.";
