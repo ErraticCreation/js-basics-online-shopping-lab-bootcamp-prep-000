@@ -29,8 +29,6 @@ function viewCart() {
     // return string
     return inYourCart;
   }
-  
-  
 }
 
 function total() {
