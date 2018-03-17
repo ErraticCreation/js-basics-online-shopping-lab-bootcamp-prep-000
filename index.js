@@ -24,7 +24,7 @@ function viewCart() {
     let inYourCart = "In your cart, you have";
     // Loop over contents of cart and add the applicable data to string to return
     for (let i = 0; i < cart.length; i++) {
-      inYourCart = `${inYourCart} ${cart[i].itemName} at $${cart[i].itemPrice}${i === cart.length -1 ? '.' : ','}`;
+      inYourCart = `${inYourCart} ${i === 1 && cart.length === 2 ? ' and ' : ''}${cart[i].itemName} at $${cart[i].itemPrice}${i === cart.length -1 ? '.' : ','}`;
     }
     // return string
     return inYourCart;
