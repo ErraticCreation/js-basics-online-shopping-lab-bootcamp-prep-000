@@ -49,11 +49,11 @@ function removeFromCart(item) {
       inCart = true;
       cart.splice(1,i);
     } 
-    if (!inCart) {
-      return "That item is not in your cart.";
-    } else {
-      return cart;
-    }
+  }
+  if (!inCart) {
+    return "That item is not in your cart.";
+  } else {
+    return cart;
   }
 }
 
