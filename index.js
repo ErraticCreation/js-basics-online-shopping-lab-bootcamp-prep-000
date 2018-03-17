@@ -20,7 +20,7 @@ function viewCart() {
   if(cart.length === 0){
     return "Your shopping cart is empty.";
   } else {
-    // Set Variable for string for return
+    // Set variable for string for return
     let inYourCart = "In your cart, you have";
     // Loop over contents of cart and add the applicable data to string for return
     for (let i = 0; i < cart.length; i++) {
@@ -32,7 +32,13 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  // Set variable for total
+  let total = 0;
+  // Loop through cart and add the total
+  for (let i = 0; i < cart.length; i++) {
+    total = cart[i].itemPrice + total;
+  }
+  // Return the total
 }
 
 function removeFromCart(item) {
