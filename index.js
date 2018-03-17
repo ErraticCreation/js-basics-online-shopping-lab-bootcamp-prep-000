@@ -48,12 +48,12 @@ function removeFromCart(item) {
     if(item === cart[i].itemName) {
       inCart = true;
       delete cart[i].itemName;
-    }  
-    
+    } 
     if (!inCart) {
       return "That item is not in your cart.";
+    } else {
+      return cart;
     }
-     
   }
 }
 
