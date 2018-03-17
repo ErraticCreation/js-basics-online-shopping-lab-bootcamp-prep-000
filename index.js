@@ -43,7 +43,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  inCart = false;
+  let inCart = false;
   for (let i = 0; i < cart.length; i++) {
     if(item === cart[i].itemName) {
       inCart = true;
