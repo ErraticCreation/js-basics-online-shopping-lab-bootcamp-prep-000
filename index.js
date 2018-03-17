@@ -19,7 +19,7 @@ function viewCart() {
   let inYourCart = "In your cart, you have";
   for (let i = 0; i < cart.length; i++) {
     
-    inYourCart = `${inYourCart} ${cart[i].itemName} at $${cart[i].itemPrice}${i === cart.length -1 ? '' : ','}`;
+    inYourCart = `${inYourCart} ${cart[i].itemName} at $${cart[i].itemPrice}${i === cart.length -1 ? '.' : ','}`;
     
   }
 }
