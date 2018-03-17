@@ -36,7 +36,7 @@ function total() {
   let total = 0;
   // Loop through cart and add the total
   for (let i = 0; i < cart.length; i++) {
-    total = cart[i].itemPrice + total;
+    total = total + cart[i].itemPrice;
   }
   // Return the total
 }
