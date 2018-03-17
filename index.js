@@ -16,7 +16,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  let inYourCart = "In your cart, you have ";
+  for (let i = 0; i < cart.length; i++) {
+    
+    
+    
+  }
 }
 
 function total() {
