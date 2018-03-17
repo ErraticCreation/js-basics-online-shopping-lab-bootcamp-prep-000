@@ -58,5 +58,12 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  // If there isn't a card number, alert the customer
+  if(!cardNumber) {
+    return "Sorry, we don't have a credit card on file for you."
+  } else {
+    let message = `Your total cost is ${total}, which will be charged to your card ${cardNumber}.`;
+  }
+  
+  
 }
